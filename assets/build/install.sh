@@ -1,5 +1,5 @@
 #!/bin/bash
-wget --version
+wget --help
 if [[ ! -f ${INVOICEPLANE_BUILD_DIR}/v${INVOICEPLANE_VERSION}.zip ]]; then 
   echo "Downloading InvoicePlane ${INVOICEPLANE_VERSION}..."
   wget -nv "https://github.com/InvoicePlane/InvoicePlane/releases/download/v${INVOICEPLANE_VERSION}/v${INVOICEPLANE_VERSION}.zip" -O ${INVOICEPLANE_BUILD_DIR}/v${INVOICEPLANE_VERSION}.zip
